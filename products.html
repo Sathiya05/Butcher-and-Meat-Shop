@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Meat Products | PrimeCut Butchers</title>
+<meta name="description" content="Explore fresh beef, chicken, lamb, goat, pork and premium steaks prepared by expert butchers.">
+<link rel="canonical" href="https://www.primecutbutchers.com/products.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('site-theme')||'light';document.documentElement.setAttribute('data-theme',t);if(t==='dark')document.documentElement.classList.add('dark');var d=localStorage.getItem('site-direction')||'ltr';document.documentElement.dir=d;}catch(e){}</script>
+</head>
+<body class="antialiased">
+<div id="navbar"></div>
+<main>
+<section class="relative overflow-hidden" aria-label="Products introduction">
+<img src="images/hero/premium-meat-counter.jpg" alt="Premium fresh meat counter with quality cuts" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-0 min-h-[100vh] flex items-center justify-center text-center">
+<div class="max-w-2xl text-white py-8 mx-auto flex flex-col items-center text-center">
+<p class="inline-flex items-center justify-center gap-2 text-xs font-bold tracking-[0.18em] uppercase bg-white/10 border border-white/25 rounded-full px-4 py-2 mb-5">Fresh Today • 18 Cuts Across 6 Categories</p>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Fresh Cuts for Every Kitchen</h1>
+<p class="text-base sm:text-lg text-white/90 leading-relaxed mb-4">Explore our selection of carefully prepared meat.</p>
+<p class="text-sm sm:text-base text-white/75 leading-relaxed mb-7 max-w-xl">Beef, chicken, lamb, goat, pork and premium steaks — trimmed, portioned and checked before packing. Filter by category and request your cut.</p>
+<div class="flex flex-wrap justify-center gap-3 mb-8">
+<a href="#productGrid" class="btn-tan">Browse Cuts <span aria-hidden="true">→</span></a>
+<a href="custom-cuts.html#enquiry" class="btn-outline">Request a Custom Cut</a>
+</div>
+<ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-white/90">
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Checked Daily</li>
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Cut to Order</li>
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Pickup &amp; Delivery</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14" aria-label="Product catalogue">
+<div class="flex flex-wrap gap-2 justify-center mb-3" role="group" aria-label="Filter products">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+<button class="filter-btn" data-filter="beef" aria-pressed="false">Beef</button>
+<button class="filter-btn" data-filter="chicken" aria-pressed="false">Chicken</button>
+<button class="filter-btn" data-filter="lamb" aria-pressed="false">Lamb</button>
+<button class="filter-btn" data-filter="goat" aria-pressed="false">Goat</button>
+<button class="filter-btn" data-filter="pork" aria-pressed="false">Pork</button>
+<button class="filter-btn" data-filter="steaks" aria-pressed="false">Steaks</button>
+</div>
+<p id="filterCount" class="text-center text-sm muted mb-8" aria-live="polite">18 cuts shown</p>
+
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="productGrid">
+
+<article class="food-card" data-category="beef"><img src="images/products/beef.jpg" alt="Fresh beef sirloin cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Beef Sirloin</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Beef</p><p class="text-sm muted mt-1">Lean, flavourful sirloin ideal for roasts and quick frying.</p><p class="text-xs mt-2 font-medium">Available: Whole • Steak Cut • Thick Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Beef Sirloin" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="beef"><img src="images/products/beef-ribeye.jpg" alt="Fresh beef ribeye steak cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Premium</span></div><h2 class="font-bold text-lg">Beef Ribeye</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Beef</p><p class="text-sm muted mt-1">Well-marbled ribeye prepared for juicy, tender cooking.</p><p class="text-xs mt-2 font-medium">Available: Steak Cut • Thick Cut • Whole</p><a href="custom-cuts.html#enquiry" data-enquire="Beef Ribeye" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="beef"><img src="images/products/beef-mince.jpg" alt="Freshly minced beef" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Beef Mince</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Beef</p><p class="text-sm muted mt-1">Freshly minced beef, great for kebabs, curries and sauces.</p><p class="text-xs mt-2 font-medium">Available: Minced • Fine • Coarse</p><a href="custom-cuts.html#enquiry" data-enquire="Beef Mince" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="beef"><img src="images/products/beef-short-ribs.jpg" alt="Fresh beef short ribs" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Beef Short Ribs</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Beef</p><p class="text-sm muted mt-1">Rich bone-in ribs suited for slow cooking and braising.</p><p class="text-xs mt-2 font-medium">Available: Bone-In • Whole • Curry Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Beef Short Ribs" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="chicken"><img src="images/products/chicken.jpg" alt="Fresh chicken breast cuts prepared for cooking" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Chicken Breast</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Chicken</p><p class="text-sm muted mt-1">Lean boneless breast, trimmed and ready for any recipe.</p><p class="text-xs mt-2 font-medium">Available: Boneless • Thin Cut • Whole</p><a href="custom-cuts.html#enquiry" data-enquire="Chicken Breast" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="chicken"><img src="images/products/chicken-thigh.jpg" alt="Fresh chicken thigh cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Chicken Thigh</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Chicken</p><p class="text-sm muted mt-1">Juicy thighs for curries, grills and roasts.</p><p class="text-xs mt-2 font-medium">Available: Bone-In • Boneless • Curry Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Chicken Thigh" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="chicken"><img src="images/products/chicken-wings.jpg" alt="Fresh chicken wings" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Chicken Wings</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Chicken</p><p class="text-sm muted mt-1">Perfectly portioned wings for grilling and frying.</p><p class="text-xs mt-2 font-medium">Available: Whole • Split • Curry Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Chicken Wings" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="chicken"><img src="images/products/chicken-whole.jpg" alt="Fresh whole chicken prepared for roasting" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Whole Chicken</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Chicken</p><p class="text-sm muted mt-1">Whole chicken cleaned and prepared for roasts.</p><p class="text-xs mt-2 font-medium">Available: Whole • Curry Cut • Boneless</p><a href="custom-cuts.html#enquiry" data-enquire="Whole Chicken" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="lamb"><img src="images/products/lamb.jpg" alt="Premium lamb chops" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Premium</span><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Lamb Chops</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Lamb</p><p class="text-sm muted mt-1">Tender chops trimmed for grilling and pan-searing.</p><p class="text-xs mt-2 font-medium">Available: Bone-In • Thick Cut • Thin Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Lamb Chops" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="lamb"><img src="images/products/lamb-leg.jpg" alt="Fresh lamb leg roast cut" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Lamb Leg</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Lamb</p><p class="text-sm muted mt-1">Flavourful leg ideal for roasts and festive cooking.</p><p class="text-xs mt-2 font-medium">Available: Whole • Boneless • Curry Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Lamb Leg" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="lamb"><img src="images/products/lamb-shoulder.jpg" alt="Fresh lamb shoulder cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Lamb Shoulder</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Lamb</p><p class="text-sm muted mt-1">Succulent shoulder for slow-cooked curries.</p><p class="text-xs mt-2 font-medium">Available: Curry Cut • Bone-In • Boneless</p><a href="custom-cuts.html#enquiry" data-enquire="Lamb Shoulder" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="goat"><img src="images/products/goat.jpg" alt="Fresh goat curry cut pieces" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Goat Curry Cut</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Goat</p><p class="text-sm muted mt-1">Even curry pieces prepared for traditional dishes.</p><p class="text-xs mt-2 font-medium">Available: Curry Cut • Bone-In • Boneless</p><a href="custom-cuts.html#enquiry" data-enquire="Goat Curry Cut" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="goat"><img src="images/products/goat-shoulder.jpg" alt="Fresh sliced goat shoulder meat" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Goat Shoulder</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Goat</p><p class="text-sm muted mt-1">Tender shoulder for roasts and slow cooking.</p><p class="text-xs mt-2 font-medium">Available: Whole • Curry Cut • Minced</p><a href="custom-cuts.html#enquiry" data-enquire="Goat Shoulder" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="pork"><img src="images/products/pork.jpg" alt="Quality pork chops" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Pork Chops</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Pork</p><p class="text-sm muted mt-1">Neat chops suited for grilling and frying.</p><p class="text-xs mt-2 font-medium">Available: Bone-In • Thin Cut • Thick Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Pork Chops" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="pork"><img src="images/products/pork-belly.jpg" alt="Fresh pork belly cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Pork Belly</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Pork</p><p class="text-sm muted mt-1">Rich belly for roasting and slow cooking.</p><p class="text-xs mt-2 font-medium">Available: Whole • Thick Cut • Minced</p><a href="custom-cuts.html#enquiry" data-enquire="Pork Belly" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="steaks"><img src="images/products/premium-steaks.jpg" alt="Richly marbled ribeye steak for grilling" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Premium</span><span class="badge badge-popular">Popular</span></div><h2 class="font-bold text-lg">Ribeye Steak</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Steaks</p><p class="text-sm muted mt-1">Richly marbled steak suitable for grilling or pan-searing.</p><p class="text-xs mt-2 font-medium">Available: Whole • Steak Cut • Thick Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Ribeye Steak" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="steaks"><img src="images/products/steak-sirloin.jpg" alt="Fresh sirloin steak cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Premium</span></div><h2 class="font-bold text-lg">Sirloin Steak</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Steaks</p><p class="text-sm muted mt-1">Lean sirloin steak with clean flavour for everyday grilling.</p><p class="text-xs mt-2 font-medium">Available: Steak Cut • Thin Cut • Thick Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Sirloin Steak" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+<article class="food-card" data-category="steaks"><img src="images/products/steak-tenderloin.jpg" alt="Premium tenderloin steak cuts" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Premium</span><span class="badge badge-fresh">Fresh</span></div><h2 class="font-bold text-lg">Tenderloin</h2><p class="text-xs font-semibold uppercase tracking-wide" style="color:#B45309">Steaks</p><p class="text-sm muted mt-1">Extra-tender cut for special occasions.</p><p class="text-xs mt-2 font-medium">Available: Steak Cut • Whole • Thick Cut</p><a href="custom-cuts.html#enquiry" data-enquire="Tenderloin Steak" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Request This Cut</a></div></article>
+
+</div>
+<p class="text-center text-xs muted mt-8">Pricing shared on enquiry — contact us for today's availability. This is a frontend demo; no real order is created until our team confirms.</p>
+</section>
+
+<!-- NOT SURE WHICH CUT -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20" aria-labelledby="help-h">
+<div class="text-center max-w-2xl mx-auto mb-8 md:mb-10 reveal">
+<div class="divider mb-3"><span class="text-xs font-bold tracking-[0.2em] uppercase" style="color:#B45309">Cut Finder</span></div>
+<h2 id="help-h" class="text-3xl md:text-4xl font-bold mb-3">Not Sure Which Cut?</h2>
+<p class="muted text-sm sm:text-base">Tell us the dish — we will point you to the right counter.</p>
+</div>
+<div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+<article class="food-card reveal overflow-hidden"><img src="images/products/help-grilling.jpg" alt="Grilled skewers and cuts for grilling" class="w-full h-44 sm:h-48 object-cover" loading="lazy"><div class="p-5 sm:p-6"><h3 class="font-bold text-lg mb-1">For Grilling &amp; Searing</h3><p class="text-sm muted mb-4">Ribeye, sirloin, chops — thick-cut and juicy.</p><a href="custom-cuts.html#enquiry" class="btn-outline-dark !py-2 !px-4 text-sm w-full justify-center">Ask for Grilling Cut</a></div></article>
+<article class="food-card reveal overflow-hidden"><img src="images/products/help-curries.jpg" alt="Slow-cooked mutton curry" class="w-full h-44 sm:h-48 object-cover" loading="lazy"><div class="p-5 sm:p-6"><h3 class="font-bold text-lg mb-1">For Curries &amp; Slow Cooking</h3><p class="text-sm muted mb-4">Even curry pieces, bone-in or boneless.</p><a href="custom-cuts.html#enquiry" class="btn-outline-dark !py-2 !px-4 text-sm w-full justify-center">Ask for Curry Cut</a></div></article>
+<article class="food-card reveal overflow-hidden sm:col-span-2 lg:col-span-1"><img src="images/products/help-roasts.jpg" alt="Roasted lamb legs for gatherings" class="w-full h-44 sm:h-48 object-cover" loading="lazy"><div class="p-5 sm:p-6"><h3 class="font-bold text-lg mb-1">For Roasts &amp; Gatherings</h3><p class="text-sm muted mb-4">Leg, shoulder and whole birds for sharing.</p><a href="custom-cuts.html#enquiry" class="btn-outline-dark !py-2 !px-4 text-sm w-full justify-center">Ask for Roast Cut</a></div></article>
+</div>
+</section>
+
+<!-- FAMILY & BULK PACKS -->
+<section class="py-14 md:py-20" style="background:#7F1D1D;color:#fff" aria-labelledby="packs-h">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-8 md:mb-10 reveal">
+<p class="text-xs font-bold tracking-[0.2em] uppercase mb-3" style="color:#D4A373">Portions That Fit</p>
+<h2 id="packs-h" class="text-3xl md:text-4xl font-bold mb-3">Family &amp; Bulk Packs</h2>
+<p class="text-white/85 text-sm sm:text-base">Practical quantities — packed neatly, priced on enquiry.</p>
+</div>
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+<div class="reveal bg-white/10 border border-white/20 rounded-2xl p-5 sm:p-6 text-center"><p class="font-extrabold text-2xl mb-1">1 kg</p><p class="font-semibold text-sm mb-1">Everyday Pack</p><p class="text-white/75 text-xs sm:text-sm mb-4">Weeknight curries &amp; quick meals.</p><a href="custom-cuts.html#enquiry" class="btn-tan !py-2 !px-4 text-sm w-full justify-center">Request 1 kg</a></div>
+<div class="reveal bg-white/10 border border-white/20 rounded-2xl p-5 sm:p-6 text-center"><p class="font-extrabold text-2xl mb-1">2–3 kg</p><p class="font-semibold text-sm mb-1">Family Pack</p><p class="text-white/75 text-xs sm:text-sm mb-4">Weekend cooking &amp; meal prep.</p><a href="custom-cuts.html#enquiry" class="btn-tan !py-2 !px-4 text-sm w-full justify-center">Request Family Pack</a></div>
+<div class="reveal bg-white/10 border border-white/20 rounded-2xl p-5 sm:p-6 text-center"><p class="font-extrabold text-2xl mb-1">5 kg</p><p class="font-semibold text-sm mb-1">Gathering Pack</p><p class="text-white/75 text-xs sm:text-sm mb-4">Parties, functions &amp; roasts.</p><a href="custom-cuts.html#enquiry" class="btn-tan !py-2 !px-4 text-sm w-full justify-center">Request 5 kg</a></div>
+<div class="reveal bg-white/10 border border-white/20 rounded-2xl p-5 sm:p-6 text-center"><p class="font-extrabold text-2xl mb-1">Bulk</p><p class="font-semibold text-sm mb-1">Custom Quantity</p><p class="text-white/75 text-xs sm:text-sm mb-4">Shops, events &amp; regular supply.</p><a href="contact.html" class="btn-outline !py-2 !px-4 text-sm w-full justify-center">Enquire for Bulk</a></div>
+</div>
+<p class="text-center text-white/60 text-xs reveal">Availability confirmed by our team before packing.</p>
+</div>
+</section>
+
+<!-- FRESHNESS PROMISE + CTA -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20" aria-labelledby="promise-h">
+<div class="grid gap-6 lg:gap-10 grid-cols-1 lg:grid-cols-2 items-center">
+<img src="images/sourcing/fresh-meat.jpg" alt="Fresh meat selection at butcher counter" class="rounded-2xl w-full h-72 sm:h-80 lg:h-[420px] object-cover reveal order-2 lg:order-1" loading="lazy" style="box-shadow:var(--shadow)">
+<div class="reveal order-1 lg:order-2">
+<div class="divider !justify-start mb-3"><span class="text-xs font-bold tracking-[0.2em] uppercase" style="color:#B45309">Freshness Promise</span></div>
+<h2 id="promise-h" class="text-3xl md:text-4xl font-bold mb-4">Checked, Cut &amp; Packed Same Day</h2>
+<ul class="space-y-3 mb-6 text-sm sm:text-base">
+<li class="flex gap-3"><span class="font-bold shrink-0" style="color:#B45309">01 —</span><span><strong>Daily checks:</strong> <span class="muted">selection reviewed every morning.</span></span></li>
+<li class="flex gap-3"><span class="font-bold shrink-0" style="color:#B45309">02 —</span><span><strong>Cut to order:</strong> <span class="muted">portioning after you enquire.</span></span></li>
+<li class="flex gap-3"><span class="font-bold shrink-0" style="color:#B45309">03 —</span><span><strong>Neat packing:</strong> <span class="muted">clean pack for pickup or delivery.</span></span></li>
+</ul>
+<div class="flex flex-col sm:flex-row flex-wrap gap-3">
+<a href="custom-cuts.html#enquiry" class="btn-primary justify-center">Request Your Cut</a>
+<a href="contact.html" class="btn-outline-dark justify-center">Ask Availability</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="py-14 md:py-20" style="background:#7F1D1D;color:#fff" aria-labelledby="products-cta-h">
+<div class="max-w-4xl mx-auto px-4 text-center reveal">
+<h2 id="products-cta-h" class="text-3xl md:text-4xl font-bold mb-3">Found Your Cut?</h2>
+<p class="text-white/85 mb-7">Tell us the cut and quantity — we confirm availability and pack it fresh.</p>
+<div class="flex flex-wrap justify-center gap-3">
+<a href="custom-cuts.html#enquiry" class="btn-tan">Request Your Cut</a>
+<a href="contact.html" class="btn-outline">Contact Us</a>
+</div>
+</div>
+</section>
+</main>
+<div id="footer"></div>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

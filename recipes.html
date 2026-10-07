@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipes & Cooking Guide | PrimeCut Butchers</title>
+<meta name="description" content="Simple recipes and cooking guides for beef, chicken, lamb, goat and pork — grilling, curries, roasts and quick weeknight meals.">
+<link rel="canonical" href="https://www.primecutbutchers.com/recipes.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('site-theme')||'light';document.documentElement.setAttribute('data-theme',t);if(t==='dark')document.documentElement.classList.add('dark');var d=localStorage.getItem('site-direction')||'ltr';document.documentElement.dir=d;}catch(e){}</script>
+</head>
+<body class="antialiased">
+<div id="navbar"></div>
+<main>
+<section class="relative overflow-hidden" aria-label="Recipes introduction">
+<img src="images/products/premium-steaks.jpg" alt="Premium cuts ready for cooking" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-0 min-h-[85vh] flex items-center justify-center text-center">
+<div class="max-w-2xl text-white py-8 mx-auto flex flex-col items-center text-center">
+<p class="inline-flex items-center justify-center gap-2 text-xs font-bold tracking-[0.18em] uppercase bg-white/10 border border-white/25 rounded-full px-4 py-2 mb-5">8 Guides • Grilling, Curries, Roasts &amp; Quick Meals</p>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Cook It Right, Every Time</h1>
+<p class="text-base sm:text-lg text-white/90 leading-relaxed mb-4">Simple cooking guides matched to our cuts.</p>
+<p class="text-sm sm:text-base text-white/75 leading-relaxed mb-7 max-w-xl">Pick a style below — each guide names the exact cut to request so the counter prepares it your way.</p>
+<div class="flex flex-wrap justify-center gap-3 mb-8">
+<a href="#recipeGrid" class="btn-tan">Browse Recipes <span aria-hidden="true">→</span></a>
+<a href="custom-cuts.html#enquiry" class="btn-outline">Request the Cut</a>
+</div>
+<ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-white/90">
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Cut Matched</li>
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Time &amp; Level Shown</li>
+<li class="flex items-center gap-2"><span class="inline-flex w-6 h-6 rounded-full items-center justify-center" style="background:#D4A373;color:#1C1917">✓</span> Beginner Friendly</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14" aria-label="Recipe collection">
+<div class="flex flex-wrap gap-2 justify-center mb-3" role="group" aria-label="Filter recipes">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+<button class="filter-btn" data-filter="grilling" aria-pressed="false">Grilling</button>
+<button class="filter-btn" data-filter="curries" aria-pressed="false">Curries</button>
+<button class="filter-btn" data-filter="roasts" aria-pressed="false">Roasts</button>
+<button class="filter-btn" data-filter="quick" aria-pressed="false">Quick Meals</button>
+</div>
+<p id="filterCount" class="text-center text-sm muted mb-8" aria-live="polite">8 guides shown</p>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="recipeGrid">
+<article class="food-card" data-category="grilling"><img src="images/recipes/grilled-ribeye.jpg" alt="Grilled ribeye steaks outdoors" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Grilling</span><span class="badge badge-type">45 min</span></div><h2 class="font-bold text-lg">Flame-Grilled Ribeye</h2><p class="text-sm muted mt-1">Thick-cut ribeye, rested and sliced. Request: Steak Cut · Thick.</p><a href="custom-cuts.html#enquiry" data-enquire="Ribeye Steak — Steak Cut Thick" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="grilling"><img src="images/recipes/chicken-skewers.jpg" alt="Marinated chicken skewers on barbecue" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-popular">Grilling</span><span class="badge badge-type">30 min</span></div><h2 class="font-bold text-lg">Charcoal Chicken Skewers</h2><p class="text-sm muted mt-1">Boneless cubes with peppers. Request: Boneless · Medium pieces.</p><a href="custom-cuts.html#enquiry" data-enquire="Chicken Boneless cubes for skewers" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="curries"><img src="images/recipes/goat-curry.jpg" alt="Slow-cooked curry bowl" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Curries</span><span class="badge badge-type">60 min</span></div><h2 class="font-bold text-lg">Slow Goat Curry</h2><p class="text-sm muted mt-1">Even bone-in pieces for deep flavour. Request: Curry Cut · Bone-In.</p><a href="custom-cuts.html#enquiry" data-enquire="Goat Curry Cut Bone-In" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="curries"><img src="images/recipes/chicken-curry.jpg" alt="Chicken curry with rice" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-fresh">Curries</span><span class="badge badge-type">35 min</span></div><h2 class="font-bold text-lg">Weeknight Chicken Curry</h2><p class="text-sm muted mt-1">Curry-cut chicken that cooks fast. Request: Curry Cut · 1 kg.</p><a href="custom-cuts.html#enquiry" data-enquire="Chicken Curry Cut 1kg" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="roasts"><img src="images/recipes/lamb-roast.jpg" alt="Roast lamb dinner" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Roasts</span><span class="badge badge-type">90 min</span></div><h2 class="font-bold text-lg">Sunday Lamb Roast</h2><p class="text-sm muted mt-1">Whole leg, slow roasted. Request: Lamb Leg · Whole.</p><a href="custom-cuts.html#enquiry" data-enquire="Lamb Leg Whole for roast" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="roasts"><img src="images/recipes/roast-chicken.jpg" alt="Classic whole roast chicken" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-premium">Roasts</span><span class="badge badge-type">75 min</span></div><h2 class="font-bold text-lg">Classic Whole Roast Chicken</h2><p class="text-sm muted mt-1">Cleaned whole bird, herb roasted. Request: Whole Chicken.</p><a href="custom-cuts.html#enquiry" data-enquire="Whole Chicken for roast" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="quick"><img src="images/recipes/mince-stirfry.jpg" alt="Fresh ground beef for stir-fry" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-type">Quick</span><span class="badge badge-type">20 min</span></div><h2 class="font-bold text-lg">15-Minute Mince Stir-Fry</h2><p class="text-sm muted mt-1">Fresh mince with veggies. Request: Minced · Fine.</p><a href="custom-cuts.html#enquiry" data-enquire="Beef Mince Fine" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+<article class="food-card" data-category="quick"><img src="images/recipes/pork-chops-seared.jpg" alt="Seared pork chops" class="w-full h-48 object-cover" loading="lazy"><div class="p-5"><div class="flex gap-2 mb-2"><span class="badge badge-type">Quick</span><span class="badge badge-type">25 min</span></div><h2 class="font-bold text-lg">Pan-Seared Pork Chops</h2><p class="text-sm muted mt-1">Thin-cut chops, fast sear. Request: Thin Cut · Bone-In.</p><a href="custom-cuts.html#enquiry" data-enquire="Pork Chops Thin Cut" class="btn-primary !py-2 !px-4 text-sm mt-4 w-full justify-center">Get This Cut</a></div></article>
+</div>
+</section>
+
+<section class="py-14 md:py-20" style="background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)" aria-labelledby="tips-h">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-8 md:mb-10 reveal">
+<div class="divider mb-3"><span class="text-xs font-bold tracking-[0.2em] uppercase" style="color:#B45309">Butcher Tips</span></div>
+<h2 id="tips-h" class="text-3xl md:text-4xl font-bold mb-3">4 Rules for Better Cooking</h2>
+</div>
+<div class="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+<div class="surface border rounded-2xl p-6 reveal"><span class="inline-flex w-11 h-11 rounded-xl items-center justify-center shrink-0 mb-3" style="background:rgba(180,83,9,.12);color:#B45309" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M20 12H4M6.34 6.34l-2-2m2 2l-1-1M18 6l2-2m-2 2l1-1M6 18l-2 2m2-2l-1 1M18 18l2 2m-2-2l1 1"/></svg></span><h3 class="font-bold mb-1">Rest grilled meat</h3><p class="text-sm muted">5–10 minutes rest keeps steaks and chops juicy.</p></div>
+<div class="surface border rounded-2xl p-6 reveal"><span class="inline-flex w-11 h-11 rounded-xl items-center justify-center shrink-0 mb-3" style="background:rgba(180,83,9,.12);color:#B45309" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88"/><path d="M14.47 14.48L20 20"/><path d="M8.12 8.12L12 12"/></svg></span><h3 class="font-bold mb-1">Match cut to dish</h3><p class="text-sm muted">Curry cut for curries, thick cut for grills — texture matters.</p></div>
+<div class="surface border rounded-2xl p-6 reveal"><span class="inline-flex w-11 h-11 rounded-xl items-center justify-center shrink-0 mb-3" style="background:rgba(180,83,9,.12);color:#B45309" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span><h3 class="font-bold mb-1">Don't overcook lean cuts</h3><p class="text-sm muted">Breast and sirloin dry fast — use medium heat, check early.</p></div>
+<div class="surface border rounded-2xl p-6 reveal"><span class="inline-flex w-11 h-11 rounded-xl items-center justify-center shrink-0 mb-3" style="background:rgba(180,83,9,.12);color:#B45309" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><h3 class="font-bold mb-1">Store right</h3><p class="text-sm muted">Refrigerate promptly and cook fresh cuts within a day or two.</p></div>
+</div>
+</div>
+</section>
+
+<section class="py-14 md:py-20" style="background:#7F1D1D;color:#fff" aria-labelledby="rc-cta-h">
+<div class="max-w-4xl mx-auto px-4 text-center reveal">
+<h2 id="rc-cta-h" class="text-3xl md:text-4xl font-bold mb-3">Hungry Already?</h2>
+<p class="text-white/85 mb-7">Pick a recipe above, then request the exact cut from our butchers.</p>
+<div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+<a href="custom-cuts.html#enquiry" class="btn-tan justify-center">Request Your Cut</a>
+<a href="products.html" class="btn-outline justify-center">Browse All Cuts</a>
+</div>
+</div>
+</section>
+</main>
+<div id="footer"></div>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
