@@ -98,12 +98,12 @@
       + '<svg id="menuIconClose" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>'
       + "</button></div></div>"
       + '<div id="mobileMenu">'
-      + '<div class="py-3 flex flex-col gap-1 border-t" style="border-color:var(--border)">'
-      + '<p class="px-3 pt-1 text-xs font-bold uppercase tracking-wider muted">Home</p>'
+      + '<div class="menu-body">'
+      + '<p class="menu-label text-xs font-bold uppercase tracking-wider muted">Home</p>'
       + link("index.html", "Home 1 ") + link("home2.html", "Home 2 ")
       + link("about.html", "About")+ link("products.html", "Products") + link("custom-cuts.html", "Custom Cuts")  + link("bulk-orders.html", "Bulk Orders")  + link("contact.html", "Contact")
-      + '<a href="custom-cuts.html#enquiry" class="btn-primary mt-2 justify-center mobile-link">Order Enquiry</a>'
-      + '<div class="mt-3 pt-3 border-t flex items-center justify-between gap-2 px-1" style="border-color:var(--border)">'
+      + '<a href="custom-cuts.html#enquiry" class="btn-primary mobile-link">Order Enquiry</a>'
+      + '<div class="menu-utils">'
       + '<div class="flex items-center gap-2"><button id="themeBtnM" class="icon-btn" aria-label="Toggle theme">' + themeIcon() + '</button><span class="text-sm font-medium">Theme</span></div>'
       + '<div class="flex items-center gap-2"><span class="text-sm font-medium">RTL / LTR</span><button id="rtlBtnM" class="icon-btn" aria-label="Toggle RTL direction">' + rtlIcon + "</button></div>"
       + "</div>"
